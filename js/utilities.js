@@ -15,3 +15,11 @@ function showSuccessModal() {
  const donationModal = document.getElementById('donation-modal');
  donationModal.classList.remove('hidden'); 
 }
+
+
+function showSectionById(id) {
+ document.getElementById('donation-area').classList.add('hidden');
+ document.getElementById('donation-history').classList.add('hidden');
+
+ document.getElementById(id).classList.remove('hidden');
+}
