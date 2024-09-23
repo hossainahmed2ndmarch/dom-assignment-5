@@ -4,6 +4,12 @@ function getInputFieldById(id) {
  return inputNumber;
 }
 
+
+function getOnlyTextValueById(id){
+ const textValue = document.getElementById(id).innerText;
+ return textValue;
+}
+
 function getTextFieldById(id) {
  const textValue = document.getElementById(id).innerText;
  const textNumber = textValue.split('').filter(char => !isNaN(char) && char !== '').join('');
