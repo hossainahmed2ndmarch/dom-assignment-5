@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
  if (blogButton) {
   blogButton.addEventListener('click', function (event) {
    event.preventDefault();
-   window.location.href = '/blog.html';
+   window.location.href = './blog.html';
   });
  } else {
   console.error('Element with ID "blog-button" not found.');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
  if (homeButton) {
   homeButton.addEventListener('click', function (event) {
    event.preventDefault();
-   window.location.href = '/index.html';
+   window.location.href = './index.html';
   });
  } else {
   console.error('Element with ID "home-button" not found.');
