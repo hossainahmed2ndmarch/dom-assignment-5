@@ -9,14 +9,29 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="font-lexend">
     <header class="sticky top-0 z-auto bg-transparent backdrop-blur-xl">
       <!-- Navbar starts -->
       <div class="navbar py-6 bg-[#F9F7F3]">
         <div class="navbar-start">
-          <a id="home-button" class="btn btn-ghost bg-[#B4F461] font-semibold text-xl">Home</a>
+          <a
+            id="home-button"
+            class="btn btn-ghost bg-[#B4F461] font-semibold text-xl"
+            >Home</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
           <div class="flex flex-row items-center justify-between space-x-3">
@@ -51,6 +66,74 @@
       </div>
       <!-- Banner ends -->
     </header>
+    <main class="px-24 my-8 space-y-8">
+      <h2 class="text-5xl font-black text-slate-900">Important FAQ</h2>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure which includes HTML elements,
+            attributes and others of a webpage (HTML) as a tree of objects that
+            can be manipulated using programming languages like JavaScript. Each
+            element, attribute, or piece of text in the HTML is represented as
+            an object in this tree.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            To select an element from the DOM (Document Object Model) in
+            JavaScript, I can use several built-in methods. The most commonly
+            used methods are getElementById(), getElementsByClassName(),
+            getElementsByTagName(), querySelector(), and querySelectorAll().
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of the DOM, and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique in the context of the DOM (Document
+            Object Model) that allows me to handle events efficiently by
+            leveraging the concept of event bubbling. Instead of attaching event
+            listeners to individual elements, I attach a single event listener
+            to a parent element and let the event "bubble up" from the child
+            elements.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attributes and styling using the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Manipulating an element's attributes and styling using the DOM in
+            JavaScript can be done through various properties and methods. These
+            are 'Manipulating Attributes', 'Manipulating CSS Styles', 'Changing
+            CSS Variables', and 'Reading Computed Styles'. By using these DOM
+            methods and properties, I can dynamically alter the attributes and
+            styles of elements in response to user interactions or other events,
+            making my web pages more interactive and responsive.
+          </p>
+        </div>
+      </div>
+    </main>
     <script src="js/features.js"></script>
   </body>
 </html>
