@@ -29,3 +29,10 @@ function showSectionById(id) {
 
  document.getElementById(id).classList.remove('hidden');
 }
+
+function changeColorById(id){
+ document.getElementById('donation-show-button').classList.remove('bg-[#B4F461]');
+ document.getElementById('history-show-button').classList.remove('bg-[#B4F461]');
+
+ document.getElementById(id).classList.add('bg-[#B4F461]', 'border-none');
+}
